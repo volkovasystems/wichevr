@@ -1,6 +1,6 @@
 {
   "name": "wichevr",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Returns whichever is the first truthy.",
   "main": "wichevr.deploy.js",
   "support": "wichevr.support.js",
@@ -24,7 +24,7 @@
     "tests"
   ],
   "dependencies": {
-    "raze": "^0.27.0",
+    "raze": "^0.29.0",
     "truly": "^0.18.0"
   }
 }
