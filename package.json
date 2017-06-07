@@ -1,6 +1,6 @@
 {
   "name": "wichevr",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Returns whichever is the first truthy.",
   "main": "wichevr.js",
   "support": "wichevr.support.js",
@@ -31,8 +31,8 @@
   "homepage": "https://github.com/volkovasystems/wichevr#readme",
   "dependencies": {
     "babel-runtime": "^6.23.0",
-    "raze": "^0.29.0",
-    "truly": "^0.18.0"
+    "raze": "^0.30.0",
+    "truly": "^0.19.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -40,6 +40,6 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-latest": "^6.24.1",
     "source-map-loader": "^0.2.1",
-    "webpack": "^2.4.1"
+    "webpack": "^2.6.1"
   }
 }
