@@ -1,12 +1,13 @@
 {
   "name": "wichevr",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "description": "Returns whichever is the first truthy.",
   "main": "wichevr.deploy.js",
   "support": "wichevr.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -24,7 +25,7 @@
     "tests"
   ],
   "dependencies": {
-    "raze": "^0.30.0",
+    "raze": "^0.31.0",
     "truly": "^0.19.0"
   }
 }
