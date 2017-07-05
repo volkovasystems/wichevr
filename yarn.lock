@@ -1021,9 +1021,9 @@ domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
 
-doubt@^0.28.0:
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.28.0.tgz#2b8b0aa9f75142f8633c43a2f3072a93a9f81c55"
+doubt@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.29.0.tgz#fba144c6c6eec11f86fb74df715db8d84700c984"
   dependencies:
     babel-runtime "^6.23.0"
     cemento "^0.16.0"
@@ -1032,7 +1032,6 @@ doubt@^0.28.0:
     harden "^0.22.0"
     khount "^0.1.0"
     protype "^0.22.0"
-    stringe "^0.4.0"
     truly "^0.19.0"
 
 ecc-jsbn@~0.1.1:
@@ -2061,12 +2060,12 @@ randombytes@^2.0.0, randombytes@^2.0.1:
   dependencies:
     safe-buffer "^5.1.0"
 
-raze@^0.31.0:
-  version "0.31.0"
-  resolved "https://registry.yarnpkg.com/raze/-/raze-0.31.0.tgz#9b8a17d6b1d34d616e784d2b9670570e6c0e6c6d"
+raze@^0.32.0:
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/raze/-/raze-0.32.0.tgz#9d63d905e40f319e54dc7a4e7853e5cb2aeddbc1"
   dependencies:
     babel-runtime "^6.23.0"
-    doubt "^0.28.0"
+    doubt "^0.29.0"
 
 rc@^1.1.7:
   version "1.2.1"
@@ -2356,12 +2355,6 @@ string_decoder@~1.0.3:
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.0.3.tgz#0fc67d7c141825de94282dd536bec6b9bce860ab"
   dependencies:
     safe-buffer "~5.1.0"
-
-stringe@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/stringe/-/stringe-0.4.0.tgz#15a7562633093f77b5e65903ddf89d6537e48c24"
-  dependencies:
-    babel-runtime "^6.23.0"
 
 stringstream@~0.0.4:
   version "0.0.5"
