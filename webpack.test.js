@@ -1,11 +1,13 @@
 "use strict";
 
 const webpack = require( "webpack" );
+
+const DefinePlugin = webpack.DefinePlugin;
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const ModuleConcatenationPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
 module.exports = {
-	"entry": "./wichevr.support.js",
+	"entry": "./zelf.support.js",
 	"resolve": {
 		"descriptionFiles": [
 			"bower.json",
@@ -32,22 +34,31 @@ module.exports = {
 		]
 	},
 	"output": {
-		"library": "wichevr",
+		"library": "zelf",
 		"libraryTarget": "umd",
-		"filename": "wichevr.deploy.js"
+		"filename": "zelf.deploy.js"
 	},
 	"plugins": [
+		new DefinePlugin( {
+			"process.env.NODE_ENV": '"production"'
+		} ),
+
+		new ModuleConcatenationPlugin( ),
+
 		new UglifyJsPlugin( {
 			"compress": {
 				"keep_fargs": true,
 				"keep_fnames": true,
-				"warnings": false
+				"keep_infinity": true,
+				"warnings": false,
+				"passes": 3
+			},
+			"mangle": {
+				"keep_fnames": true
 			},
 			"comments": false,
-			"sourceMap": true,
-			"mangle": false
-		} ),
-		new ModuleConcatenationPlugin( )
+			"sourceMap": true
+		} )
 	],
 	"devtool": "#source-map"
 };
