@@ -1,13 +1,11 @@
 "use strict";
 
 const webpack = require( "webpack" );
-
-const DefinePlugin = webpack.DefinePlugin;
 const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 const ModuleConcatenationPlugin = webpack.optimize.ModuleConcatenationPlugin;
 
 module.exports = {
-	"entry": "./zelf.support.js",
+	"entry": "./test.support.js",
 	"resolve": {
 		"descriptionFiles": [
 			"bower.json",
@@ -34,15 +32,11 @@ module.exports = {
 		]
 	},
 	"output": {
-		"library": "zelf",
+		"library": "test",
 		"libraryTarget": "umd",
-		"filename": "zelf.deploy.js"
+		"filename": "test.deploy.js"
 	},
 	"plugins": [
-		new DefinePlugin( {
-			"process.env.NODE_ENV": '"production"'
-		} ),
-
 		new ModuleConcatenationPlugin( ),
 
 		new UglifyJsPlugin( {
