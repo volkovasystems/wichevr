@@ -296,9 +296,6 @@ describe( "wichevr", ( ) => {
 //: @end-bridge
 
 
-
-
-
 // class ClassA{
 // 	constructor( ){ }
 // 	method( ){ return "hello"; }

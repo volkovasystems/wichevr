@@ -5,22 +5,22 @@
     "passes": 12,
     "pending": 0,
     "failures": 0,
-    "start": "2017-07-30T15:35:28.401Z",
-    "end": "2017-07-30T15:35:28.409Z",
-    "duration": 8
+    "start": "2017-07-30T18:12:39.933Z",
+    "end": "2017-07-30T18:12:39.942Z",
+    "duration": 9
   },
   "tests": [
     {
       "title": "should return true",
       "fullTitle": "wichevr \"wichevr( \"\", false, true )\" should return true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "should return 1",
       "fullTitle": "wichevr \"wichevr( false, [ ], [ 1, 2, 3 ] )\" should return 1",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -41,7 +41,7 @@
     {
       "title": "should be deeply equal",
       "fullTitle": "wichevr \"wichevr( null, Symbol.for( \"hello\" ) )\" should be deeply equal",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -101,14 +101,14 @@
     {
       "title": "should return true",
       "fullTitle": "wichevr \"wichevr( \"\", false, true )\" should return true",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "should return 1",
       "fullTitle": "wichevr \"wichevr( false, [ ], [ 1, 2, 3 ] )\" should return 1",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -129,7 +129,7 @@
     {
       "title": "should be deeply equal",
       "fullTitle": "wichevr \"wichevr( null, Symbol.for( \"hello\" ) )\" should be deeply equal",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },

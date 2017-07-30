@@ -181,9 +181,6 @@ describe( "wichevr", ( ) => {
 
 
 
-
-
-
 // class ClassA{
 // 	constructor( ){ }
 // 	method( ){ return "hello"; }
@@ -192,7 +189,6 @@ describe( "wichevr", ( ) => {
 // let testA = new ClassA( );
 // assert.deepEqual( wichevr( { }, testA ), { }, "should be deeply equal" );
 // assert.deepEqual( wichevr( testA, { } ), testA, "should be deeply equal" );
-
 
 // assert.deepEqual( wichevr( [ ], true ), [ ], "should be deeply equal" );
 
