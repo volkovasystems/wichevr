@@ -1,70 +1,118 @@
-"use strict";var _classCallCheck2 = require("babel-runtime/helpers/classCallCheck");var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);var _createClass2 = require("babel-runtime/helpers/createClass");var _createClass3 = _interopRequireDefault(_createClass2);var _for = require("babel-runtime/core-js/symbol/for");var _for2 = _interopRequireDefault(_for);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var assert = require("assert");
-var wichevr = require("./wichevr.js");
+"use strict";
 
-assert.equal(wichevr("", false, true), true, "should return true");
+/*;
+              	@test-license:
+              		The MIT License (MIT)
+              		@mit-license
+              
+              		Copyright (@c) 2017 Richeve Siodina Bebedor
+              		@email: richeve.bebedor@gmail.com
+              
+              		Permission is hereby granted, free of charge, to any person obtaining a copy
+              		of this software and associated documentation files (the "Software"), to deal
+              		in the Software without restriction, including without limitation the rights
+              		to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+              		copies of the Software, and to permit persons to whom the Software is
+              		furnished to do so, subject to the following conditions:
+              
+              		The above copyright notice and this permission notice shall be included in all
+              		copies or substantial portions of the Software.
+              
+              		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+              		IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+              		FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+              		AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+              		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+              		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+              		SOFTWARE.
+              	@end-test-license
+              
+              	@test-configuration:
+              		{
+              			"package": "wichevr",
+              			"path": "wichevr/test.module.js",
+              			"file": "test.module.js",
+              			"module": "test",
+              			"author": "Richeve S. Bebedor",
+              			"eMail": "richeve.bebedor@gmail.com",
+              			"contributors": [
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
+              			],
+              			"repository": "https://github.com/volkovasystems/wichevr.git"
+              		}
+              	@end-test-configuration
+              
+              	@test-documentation:
+              
+              	@end-test-documentation
+              
+              	@include:
+              		{
+              			"assert": "should",
+              			"wichevr": "wichevr"
+              		}
+              	@end-include
+              */
 
-assert.equal(wichevr(1, "hello", true), 1, "should return 1");
-
-assert.deepEqual(wichevr(false, [], [1, 2, 3]), [1, 2, 3], "should be deeply equal");
-
-var test = function hello() {};
-assert.deepEqual(wichevr(false, (0, _for2.default)("id"), test), test, "should return value of test variable");
-
-assert.equal(wichevr(null, (0, _for2.default)("hello")), (0, _for2.default)("hello"),
-"should be deeply equal");
-
-assert.deepEqual(wichevr({}, (0, _for2.default)("cloaked"), true), {}, "should return empty object");var
-
-ClassA = function () {
-	function ClassA() {(0, _classCallCheck3.default)(this, ClassA);}(0, _createClass3.default)(ClassA, [{ key: "method", value: function method()
-		{return "hello";} }]);return ClassA;}();
+var assert = require("assert");
 
 
-var testA = new ClassA();
-assert.deepEqual(wichevr({}, testA), {}, "should be deeply equal");
-assert.deepEqual(wichevr(testA, {}), testA, "should be deeply equal");
 
-var test2 = function hello() {};
-assert.deepEqual(wichevr(test2, "hello", true), test2, "should return value of test variable");
 
-assert.equal(wichevr("", false, "hello"), "hello", "should return 'hello'");
 
-assert.deepEqual(wichevr("", false, arguments), arguments, "should return arguments");
+//: @bridge:
+var path = require("path");
+//: @end-bridge
 
-var test4 = function hello() {return "hello";};
-assert.deepEqual(wichevr(test4,
-function procedure() {throw new Error("no operation");}),
-test4, "should be deeply equal");
 
-var test3 = function hello() {return "hello";};
-assert.deepEqual(wichevr(test3, true, false), test3, "should be deeply equal");
 
-assert.equal(wichevr(false, function hello() {return "hello";}, true), true, "should return true");
 
-assert.equal(wichevr("", "yeah", {}), "yeah", "should have value 'yeah'");
 
-assert.deepEqual(wichevr([], true), [], "should be deeply equal");
 
-assert.equal(wichevr(true, []), true, "should return true");
 
-assert.equal(wichevr(Infinity, "", null), Infinity, "should be equal");
+//: @bridge:
 
-assert.deepEqual(wichevr(null, {}), {}, "should be deeeply equal");
 
-assert.equal(wichevr(null, undefined, NaN.toString()), NaN.toString(), "should be equal");
 
-assert.equal(wichevr(0, 1), 1, "should have value 1");
+//: @end-bridge
 
-assert.equal(wichevr(0, ""), "", "should have empty string");
 
-assert.deepEqual(wichevr(0, {}), {}, "should have empty object");
 
-assert.equal(wichevr(0, {}, true), true, "should have boolean true");
 
-assert.equal(wichevr("yeah", 0, {}), "yeah", "should have value 'yeah'");
 
-assert.deepEqual(wichevr({}, 0, "yeah"), {}, "should be equal");
+// class ClassA{
+// 	constructor( ){ }
+// 	method( ){ return "hello"; }
+// }
 
-console.log("ok");
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QuYnJpZGdlLmpzIl0sIm5hbWVzIjpbImFzc2VydCIsInJlcXVpcmUiLCJ3aWNoZXZyIiwiZXF1YWwiLCJkZWVwRXF1YWwiLCJ0ZXN0IiwiaGVsbG8iLCJDbGFzc0EiLCJ0ZXN0QSIsInRlc3QyIiwiYXJndW1lbnRzIiwidGVzdDQiLCJwcm9jZWR1cmUiLCJFcnJvciIsInRlc3QzIiwiSW5maW5pdHkiLCJ1bmRlZmluZWQiLCJOYU4iLCJ0b1N0cmluZyIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI0Y0FBQSxJQUFNQSxTQUFTQyxRQUFTLFFBQVQsQ0FBZjtBQUNBLElBQU1DLFVBQVVELFFBQVMsY0FBVCxDQUFoQjs7QUFFQUQsT0FBT0csS0FBUCxDQUFjRCxRQUFTLEVBQVQsRUFBYSxLQUFiLEVBQW9CLElBQXBCLENBQWQsRUFBMEMsSUFBMUMsRUFBZ0Qsb0JBQWhEOztBQUVBRixPQUFPRyxLQUFQLENBQWNELFFBQVMsQ0FBVCxFQUFZLE9BQVosRUFBcUIsSUFBckIsQ0FBZCxFQUEyQyxDQUEzQyxFQUE4QyxpQkFBOUM7O0FBRUFGLE9BQU9JLFNBQVAsQ0FBa0JGLFFBQVMsS0FBVCxFQUFnQixFQUFoQixFQUFxQixDQUFFLENBQUYsRUFBSyxDQUFMLEVBQVEsQ0FBUixDQUFyQixDQUFsQixFQUFzRCxDQUFFLENBQUYsRUFBSyxDQUFMLEVBQVEsQ0FBUixDQUF0RCxFQUFtRSx3QkFBbkU7O0FBRUEsSUFBSUcsT0FBTyxTQUFTQyxLQUFULEdBQWlCLENBQUcsQ0FBL0I7QUFDQU4sT0FBT0ksU0FBUCxDQUFrQkYsUUFBUyxLQUFULEVBQWdCLG1CQUFZLElBQVosQ0FBaEIsRUFBb0NHLElBQXBDLENBQWxCLEVBQThEQSxJQUE5RCxFQUFvRSxzQ0FBcEU7O0FBRUFMLE9BQU9HLEtBQVAsQ0FBY0QsUUFBUyxJQUFULEVBQWUsbUJBQVksT0FBWixDQUFmLENBQWQsRUFBc0QsbUJBQVksT0FBWixDQUF0RDtBQUNJLHdCQURKOztBQUdBRixPQUFPSSxT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a0JGLFFBQVMsQ0FBVCxFQUFZLEVBQVosQ0FBbEIsRUFBcUMsRUFBckMsRUFBMEMsMEJBQTFDOztBQUVBRixPQUFPRyxLQUFQLENBQWNELFFBQVMsQ0FBVCxFQUFZLEVBQVosRUFBaUIsSUFBakIsQ0FBZCxFQUF1QyxJQUF2QyxFQUE2QywwQkFBN0M7O0FBRUFGLE9BQU9HLEtBQVAsQ0FBY0QsUUFBUyxNQUFULEVBQWlCLENBQWpCLEVBQW9CLEVBQXBCLENBQWQsRUFBeUMsTUFBekMsRUFBaUQsMEJBQWpEOztBQUVBRixPQUFPSSxTQUFQLENBQWtCRixRQUFTLEVBQVQsRUFBYyxDQUFkLEVBQWlCLE1BQWpCLENBQWxCLEVBQTZDLEVBQTdDLEVBQWtELGlCQUFsRDs7QUFFQWlCLFFBQVFDLEdBQVIsQ0FBYSxJQUFiIiwiZmlsZSI6InRlc3QuYnJpZGdlLmpzIiwic291cmNlc0NvbnRlbnQiOlsiY29uc3QgYXNzZXJ0ID0gcmVxdWlyZSggXCJhc3NlcnRcIiApO1xyXG5jb25zdCB3aWNoZXZyID0gcmVxdWlyZSggXCIuL3dpY2hldnIuanNcIiApO1xyXG5cclxuYXNzZXJ0LmVxdWFsKCB3aWNoZXZyKCBcIlwiLCBmYWxzZSwgdHJ1ZSApLCB0cnVlLCBcInNob3VsZCByZXR1cm4gdHJ1ZVwiICk7XHJcblxyXG5hc3NlcnQuZXF1YWwoIHdpY2hldnIoIDEsIFwiaGVsbG9cIiwgdHJ1ZSApLCAxLCBcInNob3VsZCByZXR1cm4gMVwiICk7XHJcblxyXG5hc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCBmYWxzZSwgWyBdLCBbIDEsIDIsIDMgXSApLCBbIDEsIDIsIDMgXSwgXCJzaG91bGQgYmUgZGVlcGx5IGVxdWFsXCIgKTtcclxuXHJcbmxldCB0ZXN0ID0gZnVuY3Rpb24gaGVsbG8oICl7IH07XHJcbmFzc2VydC5kZWVwRXF1YWwoIHdpY2hldnIoIGZhbHNlLCBTeW1ib2wuZm9yKCBcImlkXCIgKSwgdGVzdCApLCB0ZXN0LCBcInNob3VsZCByZXR1cm4gdmFsdWUgb2YgdGVzdCB2YXJpYWJsZVwiICk7XHJcblxyXG5hc3NlcnQuZXF1YWwoIHdpY2hldnIoIG51bGwsIFN5bWJvbC5mb3IoIFwiaGVsbG9cIiApICksIFN5bWJvbC5mb3IoIFwiaGVsbG9cIiApLFxyXG5cdFx0XHRcdFwic2hvdWxkIGJlIGRlZXBseSBlcXVhbFwiICk7XHJcblxyXG5hc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCB7IH0sIFN5bWJvbC5mb3IoIFwiY2xvYWtlZFwiICksIHRydWUgKSwgeyB9LCBcInNob3VsZCByZXR1cm4gZW1wdHkgb2JqZWN0XCIgKTtcclxuXHJcbmNsYXNzIENsYXNzQXtcclxuXHRjb25zdHJ1Y3RvciggKXsgfVxyXG5cdG1ldGhvZCggKXsgcmV0dXJuIFwiaGVsbG9cIjsgfVxyXG59XHJcblxyXG5sZXQgdGVzdEEgPSBuZXcgQ2xhc3NBKCApO1xyXG5hc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCB7IH0sIHRlc3RBICksIHsgfSwgXCJzaG91bGQgYmUgZGVlcGx5IGVxdWFsXCIgKTtcclxuYXNzZXJ0LmRlZXBFcXVhbCggd2ljaGV2ciggdGVzdEEsIHsgfSApLCB0ZXN0QSwgXCJzaG91bGQgYmUgZGVlcGx5IGVxdWFsXCIgKTtcclxuXHJcbmxldCB0ZXN0MiA9IGZ1bmN0aW9uIGhlbGxvKCApeyB9O1xyXG5hc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCB0ZXN0MiwgXCJoZWxsb1wiLCB0cnVlICksIHRlc3QyLCBcInNob3VsZCByZXR1cm4gdmFsdWUgb2YgdGVzdCB2YXJpYWJsZVwiICk7XHJcblxyXG5hc3NlcnQuZXF1YWwoIHdpY2hldnIoIFwiXCIsIGZhbHNlLCBcImhlbGxvXCIgKSwgXCJoZWxsb1wiLCBcInNob3VsZCByZXR1cm4gJ2hlbGxvJ1wiICk7XHJcblxyXG5hc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCBcIlwiLCBmYWxzZSwgYXJndW1lbnRzICksIGFyZ3VtZW50cywgXCJzaG91bGQgcmV0dXJuIGFyZ3VtZW50c1wiICk7XHJcblxyXG5sZXQgdGVzdDQgPSBmdW5jdGlvbiBoZWxsbyggKXsgcmV0dXJuIFwiaGVsbG9cIiB9O1xyXG5hc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCB0ZXN0NCxcclxuXHRcdFx0XHRcdGZ1bmN0aW9uIHByb2NlZHVyZSggKXsgdGhyb3cgbmV3IEVycm9yKCBcIm5vIG9wZXJhdGlvblwiICkgfSApLFxyXG5cdFx0XHRcdFx0dGVzdDQsIFwic2hvdWxkIGJlIGRlZXBseSBlcXVhbFwiICk7XHJcblxyXG5sZXQgdGVzdDMgPSBmdW5jdGlvbiBoZWxsbyggKXsgcmV0dXJuIFwiaGVsbG9cIiB9O1xyXG5hc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCB0ZXN0MywgdHJ1ZSwgZmFsc2UgKSwgdGVzdDMsIFwic2hvdWxkIGJlIGRlZXBseSBlcXVhbFwiICk7XHJcblxyXG5hc3NlcnQuZXF1YWwoIHdpY2hldnIoIGZhbHNlLCBmdW5jdGlvbiBoZWxsbyggKXsgcmV0dXJuIFwiaGVsbG9cIiB9LCB0cnVlICksIHRydWUsIFwic2hvdWxkIHJldHVybiB0cnVlXCIgKTtcclxuXHJcbmFzc2VydC5lcXVhbCggd2ljaGV2ciggXCJcIiwgXCJ5ZWFoXCIsIHsgfSApLCBcInllYWhcIiwgXCJzaG91bGQgaGF2ZSB2YWx1ZSAneWVhaCdcIiApO1xyXG5cclxuYXNzZXJ0LmRlZXBFcXVhbCggd2ljaGV2ciggWyBdLCB0cnVlICksIFsgXSwgXCJzaG91bGQgYmUgZGVlcGx5IGVxdWFsXCIgKTtcclxuXHJcbmFzc2VydC5lcXVhbCggd2ljaGV2ciggdHJ1ZSwgWyBdICksIHRydWUsIFwic2hvdWxkIHJldHVybiB0cnVlXCIgKTtcclxuXHJcbmFzc2VydC5lcXVhbCggd2ljaGV2ciggSW5maW5pdHksIFwiXCIsIG51bGwgKSwgSW5maW5pdHksIFwic2hvdWxkIGJlIGVxdWFsXCIgKTtcclxuXHJcbmFzc2VydC5kZWVwRXF1YWwoIHdpY2hldnIoIG51bGwsIHsgfSApLCB7IH0sIFwic2hvdWxkIGJlIGRlZWVwbHkgZXF1YWxcIiApO1xyXG5cclxuYXNzZXJ0LmVxdWFsKCB3aWNoZXZyKCBudWxsLCB1bmRlZmluZWQsIE5hTi50b1N0cmluZyggKSApLCBOYU4udG9TdHJpbmcoICksIFwic2hvdWxkIGJlIGVxdWFsXCIgKTtcclxuXHJcbmFzc2VydC5lcXVhbCggd2ljaGV2ciggMCwgMSApLCAxLCBcInNob3VsZCBoYXZlIHZhbHVlIDFcIiApO1xyXG5cclxuYXNzZXJ0LmVxdWFsKCB3aWNoZXZyKCAwLCBcIlwiICksIFwiXCIsIFwic2hvdWxkIGhhdmUgZW1wdHkgc3RyaW5nXCIgKTtcclxuXHJcbmFzc2VydC5kZWVwRXF1YWwoIHdpY2hldnIoIDAsIHsgfSApLCB7IH0sIFwic2hvdWxkIGhhdmUgZW1wdHkgb2JqZWN0XCIgKTtcclxuXHJcbmFzc2VydC5lcXVhbCggd2ljaGV2ciggMCwgeyB9LCB0cnVlICksIHRydWUsIFwic2hvdWxkIGhhdmUgYm9vbGVhbiB0cnVlXCIgKTtcclxuXHJcbmFzc2VydC5lcXVhbCggd2ljaGV2ciggXCJ5ZWFoXCIsIDAsIHsgfSApLCBcInllYWhcIiwgXCJzaG91bGQgaGF2ZSB2YWx1ZSAneWVhaCdcIiApO1xyXG5cclxuYXNzZXJ0LmRlZXBFcXVhbCggd2ljaGV2ciggeyB9LCAwLCBcInllYWhcIiApLCB7IH0sIFwic2hvdWxkIGJlIGVxdWFsXCIgKTtcclxuXHJcbmNvbnNvbGUubG9nKCBcIm9rXCIgKTtcclxuIl19
+// let testA = new ClassA( );
+// assert.deepEqual( wichevr( { }, testA ), { }, "should be deeply equal" );
+// assert.deepEqual( wichevr( testA, { } ), testA, "should be deeply equal" );
+
+
+// assert.deepEqual( wichevr( [ ], true ), [ ], "should be deeply equal" );
+
+// assert.equal( wichevr( true, [ ] ), true, "should return true" );
+
+// assert.equal( wichevr( Infinity, "", null ), Infinity, "should be equal" );
+
+// assert.deepEqual( wichevr( null, { } ), { }, "should be deeeply equal" );
+
+// assert.equal( wichevr( null, undefined, NaN.toString( ) ), NaN.toString( ), "should be equal" );
+
+// assert.equal( wichevr( 0, 1 ), 1, "should have value 1" );
+
+// assert.equal( wichevr( 0, "" ), "", "should have empty string" );
+
+// assert.deepEqual( wichevr( 0, { } ), { }, "should have empty object" );
+
+// assert.equal( wichevr( 0, { }, true ), true, "should have boolean true" );
+
+// assert.equal( wichevr( "yeah", 0, { } ), "yeah", "should have value 'yeah'" );
+
+// assert.deepEqual( wichevr( { }, 0, "yeah" ), { }, "should be equal" );
+
+// console.log( "ok" );
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QuYnJpZGdlLmpzIl0sIm5hbWVzIjpbImFzc2VydCIsInJlcXVpcmUiLCJwYXRoIl0sIm1hcHBpbmdzIjoiQUFBQTs7QUFFQTs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQXVEQSxJQUFNQSxTQUFTQyxRQUFTLFFBQVQsQ0FBZjs7Ozs7O0FBTUE7QUFDQSxJQUFNQyxPQUFPRCxRQUFTLE1BQVQsQ0FBYjtBQUNBOzs7Ozs7OztBQVFBOzs7O0FBSUE7Ozs7OztBQU1BO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0E7QUFDQTs7O0FBR0E7O0FBRUE7O0FBRUE7O0FBRUE7O0FBRUE7O0FBRUE7O0FBRUE7O0FBRUE7O0FBRUE7O0FBRUE7O0FBRUE7O0FBRUEiLCJmaWxlIjoidGVzdC5icmlkZ2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcclxuXHJcbi8qO1xyXG5cdEB0ZXN0LWxpY2Vuc2U6XHJcblx0XHRUaGUgTUlUIExpY2Vuc2UgKE1JVClcclxuXHRcdEBtaXQtbGljZW5zZVxyXG5cclxuXHRcdENvcHlyaWdodCAoQGMpIDIwMTcgUmljaGV2ZSBTaW9kaW5hIEJlYmVkb3JcclxuXHRcdEBlbWFpbDogcmljaGV2ZS5iZWJlZG9yQGdtYWlsLmNvbVxyXG5cclxuXHRcdFBlcm1pc3Npb24gaXMgaGVyZWJ5IGdyYW50ZWQsIGZyZWUgb2YgY2hhcmdlLCB0byBhbnkgcGVyc29uIG9idGFpbmluZyBhIGNvcHlcclxuXHRcdG9mIHRoaXMgc29mdHdhcmUgYW5kIGFzc29jaWF0ZWQgZG9jdW1lbnRhdGlvbiBmaWxlcyAodGhlIFwiU29mdHdhcmVcIiksIHRvIGRlYWxcclxuXHRcdGluIHRoZSBTb2Z0d2FyZSB3aXRob3V0IHJlc3RyaWN0aW9uLCBpbmNsdWRpbmcgd2l0aG91dCBsaW1pdGF0aW9uIHRoZSByaWdodHNcclxuXHRcdHRvIHVzZSwgY29weSwgbW9kaWZ5LCBtZXJnZSwgcHVibGlzaCwgZGlzdHJpYnV0ZSwgc3VibGljZW5zZSwgYW5kL29yIHNlbGxcclxuXHRcdGNvcGllcyBvZiB0aGUgU29mdHdhcmUsIGFuZCB0byBwZXJtaXQgcGVyc29ucyB0byB3aG9tIHRoZSBTb2Z0d2FyZSBpc1xyXG5cdFx0ZnVybmlzaGVkIHRvIGRvIHNvLCBzdWJqZWN0IHRvIHRoZSBmb2xsb3dpbmcgY29uZGl0aW9uczpcclxuXHJcblx0XHRUaGUgYWJvdmUgY29weXJpZ2h0IG5vdGljZSBhbmQgdGhpcyBwZXJtaXNzaW9uIG5vdGljZSBzaGFsbCBiZSBpbmNsdWRlZCBpbiBhbGxcclxuXHRcdGNvcGllcyBvciBzdWJzdGFudGlhbCBwb3J0aW9ucyBvZiB0aGUgU29mdHdhcmUuXHJcblxyXG5cdFx0VEhFIFNPRlRXQVJFIElTIFBST1ZJREVEIFwiQVMgSVNcIiwgV0lUSE9VVCBXQVJSQU5UWSBPRiBBTlkgS0lORCwgRVhQUkVTUyBPUlxyXG5cdFx0SU1QTElFRCwgSU5DTFVESU5HIEJVVCBOT1QgTElNSVRFRCBUTyBUSEUgV0FSUkFOVElFUyBPRiBNRVJDSEFOVEFCSUxJVFksXHJcblx0XHRGSVRORVNTIEZPUiBBIFBBUlRJQ1VMQVIgUFVSUE9TRSBBTkQgTk9OSU5GUklOR0VNRU5ULiBJTiBOTyBFVkVOVCBTSEFMTCBUSEVcclxuXHRcdEFVVEhPUlMgT1IgQ09QWVJJR0hUIEhPTERFUlMgQkUgTElBQkxFIEZPUiBBTlkgQ0xBSU0sIERBTUFHRVMgT1IgT1RIRVJcclxuXHRcdExJQUJJTElUWSwgV0hFVEhFUiBJTiBBTiBBQ1RJT04gT0YgQ09OVFJBQ1QsIFRPUlQgT1IgT1RIRVJXSVNFLCBBUklTSU5HIEZST00sXHJcblx0XHRPVVQgT0YgT1IgSU4gQ09OTkVDVElPTiBXSVRIIFRIRSBTT0ZUV0FSRSBPUiBUSEUgVVNFIE9SIE9USEVSIERFQUxJTkdTIElOIFRIRVxyXG5cdFx0U09GVFdBUkUuXHJcblx0QGVuZC10ZXN0LWxpY2Vuc2VcclxuXHJcblx0QHRlc3QtY29uZmlndXJhdGlvbjpcclxuXHRcdHtcclxuXHRcdFx0XCJwYWNrYWdlXCI6IFwid2ljaGV2clwiLFxyXG5cdFx0XHRcInBhdGhcIjogXCJ3aWNoZXZyL3Rlc3QubW9kdWxlLmpzXCIsXHJcblx0XHRcdFwiZmlsZVwiOiBcInRlc3QubW9kdWxlLmpzXCIsXHJcblx0XHRcdFwibW9kdWxlXCI6IFwidGVzdFwiLFxyXG5cdFx0XHRcImF1dGhvclwiOiBcIlJpY2hldmUgUy4gQmViZWRvclwiLFxyXG5cdFx0XHRcImVNYWlsXCI6IFwicmljaGV2ZS5iZWJlZG9yQGdtYWlsLmNvbVwiLFxyXG5cdFx0XHRcImNvbnRyaWJ1dG9yc1wiOiBbXHJcblx0XHRcdFx0XCJKb2huIExlbm9uIE1hZ2hhbm95IDxqb2hubGVub25tYWdoYW5veUBnbWFpbC5jb20+XCIsXHJcblx0XHRcdFx0XCJWaW5zZSBWaW5hbG9uIDx2aW5zZXZpbmFsb25AZ21haWwuY29tPlwiXHJcblx0XHRcdF0sXHJcblx0XHRcdFwicmVwb3NpdG9yeVwiOiBcImh0dHBzOi8vZ2l0aHViLmNvbS92b2xrb3Zhc3lzdGVtcy93aWNoZXZyLmdpdFwiXHJcblx0XHR9XHJcblx0QGVuZC10ZXN0LWNvbmZpZ3VyYXRpb25cclxuXHJcblx0QHRlc3QtZG9jdW1lbnRhdGlvbjpcclxuXHJcblx0QGVuZC10ZXN0LWRvY3VtZW50YXRpb25cclxuXHJcblx0QGluY2x1ZGU6XHJcblx0XHR7XHJcblx0XHRcdFwiYXNzZXJ0XCI6IFwic2hvdWxkXCIsXHJcblx0XHRcdFwid2ljaGV2clwiOiBcIndpY2hldnJcIlxyXG5cdFx0fVxyXG5cdEBlbmQtaW5jbHVkZVxyXG4qL1xyXG5cclxuY29uc3QgYXNzZXJ0ID0gcmVxdWlyZSggXCJhc3NlcnRcIiApO1xyXG5cclxuXHJcblxyXG5cclxuXHJcbi8vOiBAYnJpZGdlOlxyXG5jb25zdCBwYXRoID0gcmVxdWlyZSggXCJwYXRoXCIgKTtcclxuLy86IEBlbmQtYnJpZGdlXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG4vLzogQGJyaWRnZTpcclxuXHJcblxyXG5cclxuLy86IEBlbmQtYnJpZGdlXHJcblxyXG5cclxuXHJcblxyXG5cclxuLy8gY2xhc3MgQ2xhc3NBe1xyXG4vLyBcdGNvbnN0cnVjdG9yKCApeyB9XHJcbi8vIFx0bWV0aG9kKCApeyByZXR1cm4gXCJoZWxsb1wiOyB9XHJcbi8vIH1cclxuXHJcbi8vIGxldCB0ZXN0QSA9IG5ldyBDbGFzc0EoICk7XHJcbi8vIGFzc2VydC5kZWVwRXF1YWwoIHdpY2hldnIoIHsgfSwgdGVzdEEgKSwgeyB9LCBcInNob3VsZCBiZSBkZWVwbHkgZXF1YWxcIiApO1xyXG4vLyBhc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCB0ZXN0QSwgeyB9ICksIHRlc3RBLCBcInNob3VsZCBiZSBkZWVwbHkgZXF1YWxcIiApO1xyXG5cclxuXHJcbi8vIGFzc2VydC5kZWVwRXF1YWwoIHdpY2hldnIoIFsgXSwgdHJ1ZSApLCBbIF0sIFwic2hvdWxkIGJlIGRlZXBseSBlcXVhbFwiICk7XHJcblxyXG4vLyBhc3NlcnQuZXF1YWwoIHdpY2hldnIoIHRydWUsIFsgXSApLCB0cnVlLCBcInNob3VsZCByZXR1cm4gdHJ1ZVwiICk7XHJcblxyXG4vLyBhc3NlcnQuZXF1YWwoIHdpY2hldnIoIEluZmluaXR5LCBcIlwiLCBudWxsICksIEluZmluaXR5LCBcInNob3VsZCBiZSBlcXVhbFwiICk7XHJcblxyXG4vLyBhc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCBudWxsLCB7IH0gKSwgeyB9LCBcInNob3VsZCBiZSBkZWVlcGx5IGVxdWFsXCIgKTtcclxuXHJcbi8vIGFzc2VydC5lcXVhbCggd2ljaGV2ciggbnVsbCwgdW5kZWZpbmVkLCBOYU4udG9TdHJpbmcoICkgKSwgTmFOLnRvU3RyaW5nKCApLCBcInNob3VsZCBiZSBlcXVhbFwiICk7XHJcblxyXG4vLyBhc3NlcnQuZXF1YWwoIHdpY2hldnIoIDAsIDEgKSwgMSwgXCJzaG91bGQgaGF2ZSB2YWx1ZSAxXCIgKTtcclxuXHJcbi8vIGFzc2VydC5lcXVhbCggd2ljaGV2ciggMCwgXCJcIiApLCBcIlwiLCBcInNob3VsZCBoYXZlIGVtcHR5IHN0cmluZ1wiICk7XHJcblxyXG4vLyBhc3NlcnQuZGVlcEVxdWFsKCB3aWNoZXZyKCAwLCB7IH0gKSwgeyB9LCBcInNob3VsZCBoYXZlIGVtcHR5IG9iamVjdFwiICk7XHJcblxyXG4vLyBhc3NlcnQuZXF1YWwoIHdpY2hldnIoIDAsIHsgfSwgdHJ1ZSApLCB0cnVlLCBcInNob3VsZCBoYXZlIGJvb2xlYW4gdHJ1ZVwiICk7XHJcblxyXG4vLyBhc3NlcnQuZXF1YWwoIHdpY2hldnIoIFwieWVhaFwiLCAwLCB7IH0gKSwgXCJ5ZWFoXCIsIFwic2hvdWxkIGhhdmUgdmFsdWUgJ3llYWgnXCIgKTtcclxuXHJcbi8vIGFzc2VydC5kZWVwRXF1YWwoIHdpY2hldnIoIHsgfSwgMCwgXCJ5ZWFoXCIgKSwgeyB9LCBcInNob3VsZCBiZSBlcXVhbFwiICk7XHJcblxyXG4vLyBjb25zb2xlLmxvZyggXCJva1wiICk7XHJcbiJdfQ==
 //# sourceMappingURL=test.bridge.js.map

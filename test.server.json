@@ -1,17 +1,186 @@
-ok
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 13,
+    "tests": 12,
+    "passes": 12,
     "pending": 0,
     "failures": 0,
-    "start": "2017-07-29T20:59:57.558Z",
-    "end": "2017-07-29T20:59:57.559Z",
-    "duration": 1
+    "start": "2017-07-30T15:35:28.401Z",
+    "end": "2017-07-30T15:35:28.409Z",
+    "duration": 8
   },
-  "tests": [],
+  "tests": [
+    {
+      "title": "should return true",
+      "fullTitle": "wichevr \"wichevr( \"\", false, true )\" should return true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 1",
+      "fullTitle": "wichevr \"wichevr( false, [ ], [ 1, 2, 3 ] )\" should return 1",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be deeply equal",
+      "fullTitle": "wichevr wichevr( false, [ ], [ 1, 2, 3 ] ) should be deeply equal",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return value of test variable",
+      "fullTitle": "wichevr \"wichevr( false, Symbol.for( \"id\" ), test )\" should return value of test variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be deeply equal",
+      "fullTitle": "wichevr \"wichevr( null, Symbol.for( \"hello\" ) )\" should be deeply equal",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return empty object",
+      "fullTitle": "wichevr \"wichevr( { }, Symbol.for( \"cloaked\" ), true )\" should return empty object",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return value of test variable",
+      "fullTitle": "wichevr \"wichevr( test2, \"hello\", true )\" should return value of test variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 'hello'",
+      "fullTitle": "wichevr \"wichevr( \"\", false, \"hello\" )\" should return 'hello'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return arguments",
+      "fullTitle": "wichevr \"wichevr( \"\", false, arguments )\" should return arguments",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be deeply equal",
+      "fullTitle": "wichevr \"wichevr( test4,function procedure( ){ throw new Error( \"no operation\" ) } )\" should be deeply equal",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return true",
+      "fullTitle": "wichevr \"wichevr( false, function hello( ){ return \"hello\" }, true )\" should return true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'yeah'",
+      "fullTitle": "wichevr \"wichevr( \"\", \"yeah\", { } )\" should have value 'yeah'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
   "pending": [],
   "failures": [],
-  "passes": []
+  "passes": [
+    {
+      "title": "should return true",
+      "fullTitle": "wichevr \"wichevr( \"\", false, true )\" should return true",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 1",
+      "fullTitle": "wichevr \"wichevr( false, [ ], [ 1, 2, 3 ] )\" should return 1",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be deeply equal",
+      "fullTitle": "wichevr wichevr( false, [ ], [ 1, 2, 3 ] ) should be deeply equal",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return value of test variable",
+      "fullTitle": "wichevr \"wichevr( false, Symbol.for( \"id\" ), test )\" should return value of test variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be deeply equal",
+      "fullTitle": "wichevr \"wichevr( null, Symbol.for( \"hello\" ) )\" should be deeply equal",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return empty object",
+      "fullTitle": "wichevr \"wichevr( { }, Symbol.for( \"cloaked\" ), true )\" should return empty object",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return value of test variable",
+      "fullTitle": "wichevr \"wichevr( test2, \"hello\", true )\" should return value of test variable",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return 'hello'",
+      "fullTitle": "wichevr \"wichevr( \"\", false, \"hello\" )\" should return 'hello'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return arguments",
+      "fullTitle": "wichevr \"wichevr( \"\", false, arguments )\" should return arguments",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should be deeply equal",
+      "fullTitle": "wichevr \"wichevr( test4,function procedure( ){ throw new Error( \"no operation\" ) } )\" should be deeply equal",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should return true",
+      "fullTitle": "wichevr \"wichevr( false, function hello( ){ return \"hello\" }, true )\" should return true",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should have value 'yeah'",
+      "fullTitle": "wichevr \"wichevr( \"\", \"yeah\", { } )\" should have value 'yeah'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
 }
