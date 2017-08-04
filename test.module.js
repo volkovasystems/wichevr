@@ -71,9 +71,9 @@ const path = require( "path" );
 
 //: @server:
 describe( "wichevr", ( ) => {
-	
+
 	describe( `"wichevr( "", false, true )"`, ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( wichevr( "", false, true ), true );
 
@@ -81,7 +81,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( false, [ ], [ 1, 2, 3 ] )"`, ( ) => {
-	it( "should return 1", ( ) => {
+	it( "should be equal to 1", ( ) => {
 
 			assert.equal( wichevr( 1, "hello", true ), 1 );
 
@@ -97,7 +97,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( false, Symbol.for( "id" ), test )"`, ( ) => {
-	it( "should return value of test variable", ( ) => {
+	it( "should be equal to value of test variable", ( ) => {
 
 			let test = function hello( ){ };
 			assert.deepEqual( wichevr( false, Symbol.for( "id" ), test ), test);
@@ -114,7 +114,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( { }, Symbol.for( "cloaked" ), true )"`, ( ) => {
-	it( "should return empty object", ( ) => {
+	it( "should be equal to empty object", ( ) => {
 
 			assert.deepEqual( wichevr( { }, Symbol.for( "cloaked" ), true ), { } );
 
@@ -122,7 +122,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( test2, "hello", true )"`, ( ) => {
-	it( "should return value of test variable", ( ) => {
+	it( "should be equal to value of test variable", ( ) => {
 
 			let test2 = function hello( ){ };
 			assert.deepEqual( wichevr( test2, "hello", true ), test2 );
@@ -131,7 +131,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( "", false, "hello" )"`, ( ) => {
-	it( "should return 'hello'", ( ) => {
+	it( "should be equal to 'hello'", ( ) => {
 
 			assert.equal( wichevr( "", false, "hello" ), "hello");
 
@@ -139,7 +139,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( "", false, arguments )"`, ( ) => {
-	it( "should return arguments", ( ) => {
+	it( "should be equal to arguments", ( ) => {
 
 			assert.deepEqual( wichevr( "", false, arguments ), arguments );
 
@@ -158,7 +158,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( false, function hello( ){ return "hello" }, true )"`, ( ) => {
-	it( "should return true", ( ) => {
+	it( "should be equal to true", ( ) => {
 
 			assert.equal( wichevr( false, function hello( ){ return "hello" }, true ), true );
 
@@ -179,12 +179,12 @@ describe( "wichevr", ( ) => {
 //: @end-server
 
 
-//: @client: 
+//: @client:
 
 describe( "wichevr", ( ) => {
-	
+
 	describe( `"wichevr( "", false, true )"`, ( ) => {
-		it( "should return true", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( wichevr( "", false, true ), true );
 
@@ -192,7 +192,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( false, [ ], [ 1, 2, 3 ] )"`, ( ) => {
-	it( "should return 1", ( ) => {
+	it( "should be equal to 1", ( ) => {
 
 			assert.equal( wichevr( 1, "hello", true ), 1 );
 
@@ -208,7 +208,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( false, Symbol.for( "id" ), test )"`, ( ) => {
-	it( "should return value of test variable", ( ) => {
+	it( "should be equal to value of test variable", ( ) => {
 
 			let test = function hello( ){ };
 			assert.deepEqual( wichevr( false, Symbol.for( "id" ), test ), test);
@@ -225,7 +225,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( { }, Symbol.for( "cloaked" ), true )"`, ( ) => {
-	it( "should return empty object", ( ) => {
+	it( "should be equal to empty object", ( ) => {
 
 			assert.deepEqual( wichevr( { }, Symbol.for( "cloaked" ), true ), { } );
 
@@ -233,7 +233,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( test2, "hello", true )"`, ( ) => {
-	it( "should return value of test variable", ( ) => {
+	it( "should be equal to value of test variable", ( ) => {
 
 			let test2 = function hello( ){ };
 			assert.deepEqual( wichevr( test2, "hello", true ), test2 );
@@ -242,7 +242,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( "", false, "hello" )"`, ( ) => {
-	it( "should return 'hello'", ( ) => {
+	it( "should be equal to 'hello'", ( ) => {
 
 			assert.equal( wichevr( "", false, "hello" ), "hello");
 
@@ -250,7 +250,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( "", false, arguments )"`, ( ) => {
-	it( "should return arguments", ( ) => {
+	it( "should be equal to arguments", ( ) => {
 
 			assert.deepEqual( wichevr( "", false, arguments ), arguments );
 
@@ -269,7 +269,7 @@ describe( "wichevr", ( ) => {
 	} );
 
 	describe( `"wichevr( false, function hello( ){ return "hello" }, true )"`, ( ) => {
-	it( "should return true", ( ) => {
+	it( "should be equal to true", ( ) => {
 
 			assert.equal( wichevr( false, function hello( ){ return "hello" }, true ), true );
 
@@ -288,43 +288,45 @@ describe( "wichevr", ( ) => {
 
 //: @end-client
 
-
 //: @bridge:
 
+describe( "wichevr", ( ) => {
 
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
+	describe( `"<test>"`, ( ) => {
+		it( "<message>", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return <test>;
+				}
+
+			).value;
+
+			assert.equal( result, <expected> );
+
+		} );
+	} );
+	/*
+
+	describe( `"<test>"`, ( ) => {
+		it( "<message>", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return <test>;
+				}
+
+			).value;
+
+			assert.equal( result, <expected> );
+
+		} );
+	} );
+
+	*/
+} );
 //: @end-bridge
-
-
-// class ClassA{
-// 	constructor( ){ }
-// 	method( ){ return "hello"; }
-// }
-
-// let testA = new ClassA( );
-// assert.deepEqual( wichevr( { }, testA ), { }, "should be deeply equal" );
-// assert.deepEqual( wichevr( testA, { } ), testA, "should be deeply equal" );
-
-// assert.deepEqual( wichevr( [ ], true ), [ ], "should be deeply equal" );
-
-// assert.equal( wichevr( true, [ ] ), true, "should return true" );
-
-// assert.equal( wichevr( Infinity, "", null ), Infinity, "should be equal" );
-
-// assert.deepEqual( wichevr( null, { } ), { }, "should be deeeply equal" );
-
-// assert.equal( wichevr( null, undefined, NaN.toString( ) ), NaN.toString( ), "should be equal" );
-
-// assert.equal( wichevr( 0, 1 ), 1, "should have value 1" );
-
-// assert.equal( wichevr( 0, "" ), "", "should have empty string" );
-
-// assert.deepEqual( wichevr( 0, { } ), { }, "should have empty object" );
-
-// assert.equal( wichevr( 0, { }, true ), true, "should have boolean true" );
-
-// assert.equal( wichevr( "yeah", 0, { } ), "yeah", "should have value 'yeah'" );
-
-// assert.deepEqual( wichevr( { }, 0, "yeah" ), { }, "should be equal" );
-
-// console.log( "ok" );
