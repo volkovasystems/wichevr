@@ -34,9 +34,9 @@ module.exports = {
 		]
 	},
 	"output": {
-		"library": "zelf",
+		"library": "wichevr",
 		"libraryTarget": "umd",
-		"filename": "zelf.deploy.js"
+		"filename": "wichevr.deploy.js"
 	},
 	"plugins": [
 		new DefinePlugin( {
