@@ -1,186 +1,186 @@
 {
-  "stats": {
-    "suites": 13,
-    "tests": 12,
-    "passes": 12,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-18T07:06:47.115Z",
-    "end": "2017-08-18T07:06:47.139Z",
-    "duration": 24
-  },
-  "tests": [
-    {
-      "title": "should be equal to true",
-      "fullTitle": "wichevr \"wichevr( \"\", false, true )\" should be equal to true",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 1",
-      "fullTitle": "wichevr \"wichevr( false, [ ], [ 1, 2, 3 ] )\" should be equal to 1",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be deeply equal",
-      "fullTitle": "wichevr wichevr( false, [ ], [ 1, 2, 3 ] ) should be deeply equal",
-      "duration": 3,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to value of test variable",
-      "fullTitle": "wichevr \"wichevr( false, Symbol.for( \"id\" ), test )\" should be equal to value of test variable",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be deeply equal",
-      "fullTitle": "wichevr \"wichevr( null, Symbol.for( \"hello\" ) )\" should be deeply equal",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to empty object",
-      "fullTitle": "wichevr \"wichevr( { }, Symbol.for( \"cloaked\" ), true )\" should be equal to empty object",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to value of test variable",
-      "fullTitle": "wichevr \"wichevr( test2, \"hello\", true )\" should be equal to value of test variable",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello'",
-      "fullTitle": "wichevr \"wichevr( \"\", false, \"hello\" )\" should be equal to 'hello'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to arguments",
-      "fullTitle": "wichevr \"wichevr( \"\", false, arguments )\" should be equal to arguments",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be deeply equal",
-      "fullTitle": "wichevr \"wichevr( test4,function procedure( ){ throw new Error( \"no operation\" ) } )\" should be deeply equal",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to true",
-      "fullTitle": "wichevr \"wichevr( false, function hello( ){ return \"hello\" }, true )\" should be equal to true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should have value 'yeah'",
-      "fullTitle": "wichevr \"wichevr( \"\", \"yeah\", { } )\" should have value 'yeah'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should be equal to true",
-      "fullTitle": "wichevr \"wichevr( \"\", false, true )\" should be equal to true",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 1",
-      "fullTitle": "wichevr \"wichevr( false, [ ], [ 1, 2, 3 ] )\" should be equal to 1",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be deeply equal",
-      "fullTitle": "wichevr wichevr( false, [ ], [ 1, 2, 3 ] ) should be deeply equal",
-      "duration": 3,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to value of test variable",
-      "fullTitle": "wichevr \"wichevr( false, Symbol.for( \"id\" ), test )\" should be equal to value of test variable",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be deeply equal",
-      "fullTitle": "wichevr \"wichevr( null, Symbol.for( \"hello\" ) )\" should be deeply equal",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to empty object",
-      "fullTitle": "wichevr \"wichevr( { }, Symbol.for( \"cloaked\" ), true )\" should be equal to empty object",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to value of test variable",
-      "fullTitle": "wichevr \"wichevr( test2, \"hello\", true )\" should be equal to value of test variable",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to 'hello'",
-      "fullTitle": "wichevr \"wichevr( \"\", false, \"hello\" )\" should be equal to 'hello'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to arguments",
-      "fullTitle": "wichevr \"wichevr( \"\", false, arguments )\" should be equal to arguments",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be deeply equal",
-      "fullTitle": "wichevr \"wichevr( test4,function procedure( ){ throw new Error( \"no operation\" ) } )\" should be deeply equal",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should be equal to true",
-      "fullTitle": "wichevr \"wichevr( false, function hello( ){ return \"hello\" }, true )\" should be equal to true",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "should have value 'yeah'",
-      "fullTitle": "wichevr \"wichevr( \"\", \"yeah\", { } )\" should have value 'yeah'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 13,
+		"tests": 12,
+		"passes": 12,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-21T09:53:11.043Z",
+		"end": "2017-08-21T09:53:11.053Z",
+		"duration": 10
+	},
+	"tests": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "wichevr `wichevr( '', false, true )` should be equal to true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 1",
+			"fullTitle": "wichevr `wichevr( 1, 'hello', true )` should be equal to 1",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to [ 1, 2, 3 ]",
+			"fullTitle": "wichevr `wichevr( false, [ ], [ 1, 2, 3 ] )` should be equal to [ 1, 2, 3 ]",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to function hello( ){ }",
+			"fullTitle": "wichevr `wichevr( false, Symbol.for( 'id' ), function hello( ){ } )` should be equal to function hello( ){ }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to Symbol.for( 'hello' )",
+			"fullTitle": "wichevr `wichevr( null, Symbol.for( 'hello' ) )` should be equal to Symbol.for( 'hello' )",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to empty object",
+			"fullTitle": "wichevr `wichevr( { }, Symbol.for( 'cloaked' ), true )` should be equal to empty object",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to function hello( ){ }",
+			"fullTitle": "wichevr `wichevr( function hello( ){ }, 'hello', true )` should be equal to function hello( ){ }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello'",
+			"fullTitle": "wichevr `wichevr( '', false, 'hello' )` should be equal to 'hello'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to { 0: 'hello' }",
+			"fullTitle": "wichevr `wichevr( '', false, { 0: 'hello' } )` should be equal to { 0: 'hello' }",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to function hello( ){ return 'hello' }",
+			"fullTitle": "wichevr `wichevr( function hello( ){ return 'hello' }, function procedure( ){ throw new Error( 'no operation' ) } )` should be equal to function hello( ){ return 'hello' }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "wichevr `wichevr( false, function hello( ){ return 'hello' }, true )` should be equal to true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'yeah'",
+			"fullTitle": "wichevr `wichevr( '', 'yeah', { } )` should be equal to 'yeah'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to true",
+			"fullTitle": "wichevr `wichevr( '', false, true )` should be equal to true",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 1",
+			"fullTitle": "wichevr `wichevr( 1, 'hello', true )` should be equal to 1",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to [ 1, 2, 3 ]",
+			"fullTitle": "wichevr `wichevr( false, [ ], [ 1, 2, 3 ] )` should be equal to [ 1, 2, 3 ]",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to function hello( ){ }",
+			"fullTitle": "wichevr `wichevr( false, Symbol.for( 'id' ), function hello( ){ } )` should be equal to function hello( ){ }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to Symbol.for( 'hello' )",
+			"fullTitle": "wichevr `wichevr( null, Symbol.for( 'hello' ) )` should be equal to Symbol.for( 'hello' )",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to empty object",
+			"fullTitle": "wichevr `wichevr( { }, Symbol.for( 'cloaked' ), true )` should be equal to empty object",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to function hello( ){ }",
+			"fullTitle": "wichevr `wichevr( function hello( ){ }, 'hello', true )` should be equal to function hello( ){ }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'hello'",
+			"fullTitle": "wichevr `wichevr( '', false, 'hello' )` should be equal to 'hello'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to { 0: 'hello' }",
+			"fullTitle": "wichevr `wichevr( '', false, { 0: 'hello' } )` should be equal to { 0: 'hello' }",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to function hello( ){ return 'hello' }",
+			"fullTitle": "wichevr `wichevr( function hello( ){ return 'hello' }, function procedure( ){ throw new Error( 'no operation' ) } )` should be equal to function hello( ){ return 'hello' }",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to true",
+			"fullTitle": "wichevr `wichevr( false, function hello( ){ return 'hello' }, true )` should be equal to true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be equal to 'yeah'",
+			"fullTitle": "wichevr `wichevr( '', 'yeah', { } )` should be equal to 'yeah'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

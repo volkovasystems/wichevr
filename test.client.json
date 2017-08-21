@@ -1,0 +1,436 @@
+{
+	"state": {
+		"passed": 12,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-21T09:53:12.472Z",
+	"end": "2017-08-21T09:53:47.228Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "wichevr",
+			"duration": 0,
+			"start": "2017-08-21T09:53:46.400Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "wichevr",
+			"duration": 648,
+			"start": "2017-08-21T09:53:46.401Z",
+			"end": "2017-08-21T09:53:47.049Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-21T09:53:46.403Z",
+					"end": "2017-08-21T09:53:46.404Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-21T09:53:46.512Z",
+					"end": "2017-08-21T09:53:46.513Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-21T09:53:46.515Z",
+					"end": "2017-08-21T09:53:46.515Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to 1"
+				},
+				{
+					"start": "2017-08-21T09:53:46.578Z",
+					"end": "2017-08-21T09:53:46.578Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to 1"
+				},
+				{
+					"start": "2017-08-21T09:53:46.579Z",
+					"end": "2017-08-21T09:53:46.579Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to [ 1, 2, 3 ]"
+				},
+				{
+					"start": "2017-08-21T09:53:46.624Z",
+					"end": "2017-08-21T09:53:46.625Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to [ 1, 2, 3 ]"
+				},
+				{
+					"start": "2017-08-21T09:53:46.625Z",
+					"end": "2017-08-21T09:53:46.626Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to function hello( ){ }"
+				},
+				{
+					"start": "2017-08-21T09:53:46.666Z",
+					"end": "2017-08-21T09:53:46.666Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to function hello( ){ }"
+				},
+				{
+					"start": "2017-08-21T09:53:46.666Z",
+					"end": "2017-08-21T09:53:46.666Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to Symbol.for( 'hello' )"
+				},
+				{
+					"start": "2017-08-21T09:53:46.713Z",
+					"end": "2017-08-21T09:53:46.714Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to Symbol.for( 'hello' )"
+				},
+				{
+					"start": "2017-08-21T09:53:46.714Z",
+					"end": "2017-08-21T09:53:46.714Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to empty object"
+				},
+				{
+					"start": "2017-08-21T09:53:46.760Z",
+					"end": "2017-08-21T09:53:46.760Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to empty object"
+				},
+				{
+					"start": "2017-08-21T09:53:46.761Z",
+					"end": "2017-08-21T09:53:46.761Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to function hello( ){ }"
+				},
+				{
+					"start": "2017-08-21T09:53:46.799Z",
+					"end": "2017-08-21T09:53:46.799Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to function hello( ){ }"
+				},
+				{
+					"start": "2017-08-21T09:53:46.800Z",
+					"end": "2017-08-21T09:53:46.801Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to 'hello'"
+				},
+				{
+					"start": "2017-08-21T09:53:46.841Z",
+					"end": "2017-08-21T09:53:46.841Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to 'hello'"
+				},
+				{
+					"start": "2017-08-21T09:53:46.843Z",
+					"end": "2017-08-21T09:53:46.844Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to { 0: 'hello' }"
+				},
+				{
+					"start": "2017-08-21T09:53:46.897Z",
+					"end": "2017-08-21T09:53:46.897Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to { 0: 'hello' }"
+				},
+				{
+					"start": "2017-08-21T09:53:46.898Z",
+					"end": "2017-08-21T09:53:46.898Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to function hello( ){ return 'hello' }"
+				},
+				{
+					"start": "2017-08-21T09:53:46.949Z",
+					"end": "2017-08-21T09:53:46.949Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to function hello( ){ return 'hello' }"
+				},
+				{
+					"start": "2017-08-21T09:53:46.951Z",
+					"end": "2017-08-21T09:53:46.951Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-21T09:53:46.994Z",
+					"end": "2017-08-21T09:53:46.994Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to true"
+				},
+				{
+					"start": "2017-08-21T09:53:46.994Z",
+					"end": "2017-08-21T09:53:46.995Z",
+					"duration": 1,
+					"title": "\"before each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to 'yeah'"
+				},
+				{
+					"start": "2017-08-21T09:53:47.049Z",
+					"end": "2017-08-21T09:53:47.049Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "wichevr",
+					"associatedTest": "should be equal to 'yeah'"
+				},
+				{
+					"start": "2017-08-21T09:53:47.049Z",
+					"end": "2017-08-21T09:53:47.050Z",
+					"duration": 1,
+					"title": "\"after all\" hook",
+					"associatedSuite": "wichevr"
+				}
+			]
+		},
+		{
+			"name": "`wichevr( '', false, true )`",
+			"duration": 112,
+			"start": "2017-08-21T09:53:46.402Z",
+			"end": "2017-08-21T09:53:46.514Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-21T09:53:46.403Z",
+					"end": "2017-08-21T09:53:46.512Z",
+					"duration": 109,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( 1, 'hello', true )`",
+			"duration": 64,
+			"start": "2017-08-21T09:53:46.514Z",
+			"end": "2017-08-21T09:53:46.578Z",
+			"tests": [
+				{
+					"name": "should be equal to 1",
+					"start": "2017-08-21T09:53:46.514Z",
+					"end": "2017-08-21T09:53:46.577Z",
+					"duration": 63,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( false, [ ], [ 1, 2, 3 ] )`",
+			"duration": 47,
+			"start": "2017-08-21T09:53:46.578Z",
+			"end": "2017-08-21T09:53:46.625Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 1, 2, 3 ]",
+					"start": "2017-08-21T09:53:46.578Z",
+					"end": "2017-08-21T09:53:46.624Z",
+					"duration": 46,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( false, Symbol.for( 'id' ), function hello( ){ } )`",
+			"duration": 41,
+			"start": "2017-08-21T09:53:46.625Z",
+			"end": "2017-08-21T09:53:46.666Z",
+			"tests": [
+				{
+					"name": "should be equal to function hello( ){ }",
+					"start": "2017-08-21T09:53:46.625Z",
+					"end": "2017-08-21T09:53:46.665Z",
+					"duration": 40,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( null, Symbol.for( 'hello' ) )`",
+			"duration": 48,
+			"start": "2017-08-21T09:53:46.666Z",
+			"end": "2017-08-21T09:53:46.714Z",
+			"tests": [
+				{
+					"name": "should be equal to Symbol.for( 'hello' )",
+					"start": "2017-08-21T09:53:46.666Z",
+					"end": "2017-08-21T09:53:46.713Z",
+					"duration": 47,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( { }, Symbol.for( 'cloaked' ), true )`",
+			"duration": 46,
+			"start": "2017-08-21T09:53:46.714Z",
+			"end": "2017-08-21T09:53:46.760Z",
+			"tests": [
+				{
+					"name": "should be equal to empty object",
+					"start": "2017-08-21T09:53:46.714Z",
+					"end": "2017-08-21T09:53:46.760Z",
+					"duration": 46,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( function hello( ){ }, 'hello', true )`",
+			"duration": 39,
+			"start": "2017-08-21T09:53:46.760Z",
+			"end": "2017-08-21T09:53:46.799Z",
+			"tests": [
+				{
+					"name": "should be equal to function hello( ){ }",
+					"start": "2017-08-21T09:53:46.761Z",
+					"end": "2017-08-21T09:53:46.799Z",
+					"duration": 38,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( '', false, 'hello' )`",
+			"duration": 42,
+			"start": "2017-08-21T09:53:46.799Z",
+			"end": "2017-08-21T09:53:46.841Z",
+			"tests": [
+				{
+					"name": "should be equal to 'hello'",
+					"start": "2017-08-21T09:53:46.799Z",
+					"end": "2017-08-21T09:53:46.841Z",
+					"duration": 42,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( '', false, { 0: 'hello' } )`",
+			"duration": 56,
+			"start": "2017-08-21T09:53:46.841Z",
+			"end": "2017-08-21T09:53:46.897Z",
+			"tests": [
+				{
+					"name": "should be equal to { 0: 'hello' }",
+					"start": "2017-08-21T09:53:46.841Z",
+					"end": "2017-08-21T09:53:46.897Z",
+					"duration": 56,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( function hello( ){ return 'hello' }, function procedure( ){ throw new Error( 'no operation' ) } )`",
+			"duration": 51,
+			"start": "2017-08-21T09:53:46.898Z",
+			"end": "2017-08-21T09:53:46.949Z",
+			"tests": [
+				{
+					"name": "should be equal to function hello( ){ return 'hello' }",
+					"start": "2017-08-21T09:53:46.898Z",
+					"end": "2017-08-21T09:53:46.948Z",
+					"duration": 50,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( false, function hello( ){ return 'hello' }, true )`",
+			"duration": 43,
+			"start": "2017-08-21T09:53:46.951Z",
+			"end": "2017-08-21T09:53:46.994Z",
+			"tests": [
+				{
+					"name": "should be equal to true",
+					"start": "2017-08-21T09:53:46.951Z",
+					"end": "2017-08-21T09:53:46.994Z",
+					"duration": 43,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`wichevr( '', 'yeah', { } )`",
+			"duration": 55,
+			"start": "2017-08-21T09:53:46.994Z",
+			"end": "2017-08-21T09:53:47.049Z",
+			"tests": [
+				{
+					"name": "should be equal to 'yeah'",
+					"start": "2017-08-21T09:53:46.994Z",
+					"end": "2017-08-21T09:53:47.049Z",
+					"duration": 55,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

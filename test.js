@@ -55,7 +55,7 @@
 	@end-include
 */
 
-const assert = require( "assert" );
+const assert = require( "should" );
 
 //: @server:
 const wichevr = require( "./wichevr.js" );
@@ -68,7 +68,7 @@ const wichevr = require( "./wichevr.js" );
 //: @server:
 describe( "wichevr", ( ) => {
 
-	describe( `"wichevr( "", false, true )"`, ( ) => {
+	describe( "`wichevr( '', false, true )`", ( ) => {
 		it( "should be equal to true", ( ) => {
 
 			assert.equal( wichevr( "", false, true ), true );
@@ -76,49 +76,49 @@ describe( "wichevr", ( ) => {
 		} );
 	} );
 
-	describe( `"wichevr( false, [ ], [ 1, 2, 3 ] )"`, ( ) => {
-	it( "should be equal to 1", ( ) => {
+	describe( "`wichevr( 1, 'hello', true )`", ( ) => {
+		it( "should be equal to 1", ( ) => {
 
 			assert.equal( wichevr( 1, "hello", true ), 1 );
 
 		} );
 	} );
 
-	describe( "wichevr( false, [ ], [ 1, 2, 3 ] )", ( ) => {
-	it( "should be deeply equal", ( ) => {
+	describe( "`wichevr( false, [ ], [ 1, 2, 3 ] )`", ( ) => {
+		it( "should be equal to [ 1, 2, 3 ]", ( ) => {
 
 			assert.deepEqual( wichevr( false, [ ], [ 1, 2, 3 ] ), [ 1, 2, 3 ] );
 
 		} );
 	} );
 
-	describe( `"wichevr( false, Symbol.for( "id" ), test )"`, ( ) => {
-	it( "should be equal to value of test variable", ( ) => {
+	describe( "`wichevr( false, Symbol.for( 'id' ), function hello( ){ } )`", ( ) => {
+		it( "should be equal to function hello( ){ }", ( ) => {
 
 			let test = function hello( ){ };
-			assert.deepEqual( wichevr( false, Symbol.for( "id" ), test ), test);
+			assert.deepEqual( wichevr( false, Symbol.for( "id" ), test ), test );
 
 		} );
 	} );
 
-	describe( `"wichevr( null, Symbol.for( "hello" ) )"`, ( ) => {
-	it( "should be deeply equal", ( ) => {
+	describe( "`wichevr( null, Symbol.for( 'hello' ) )`", ( ) => {
+		it( "should be equal to Symbol.for( 'hello' )", ( ) => {
 
 			assert.equal( wichevr( null, Symbol.for( "hello" ) ), Symbol.for( "hello" ) );
 
 		} );
 	} );
 
-	describe( `"wichevr( { }, Symbol.for( "cloaked" ), true )"`, ( ) => {
-	it( "should be equal to empty object", ( ) => {
+	describe( "`wichevr( { }, Symbol.for( 'cloaked' ), true )`", ( ) => {
+		it( "should be equal to empty object", ( ) => {
 
 			assert.deepEqual( wichevr( { }, Symbol.for( "cloaked" ), true ), { } );
 
 		} );
 	} );
 
-	describe( `"wichevr( test2, "hello", true )"`, ( ) => {
-	it( "should be equal to value of test variable", ( ) => {
+	describe( "`wichevr( function hello( ){ }, 'hello', true )`", ( ) => {
+		it( "should be equal to function hello( ){ }", ( ) => {
 
 			let test2 = function hello( ){ };
 			assert.deepEqual( wichevr( test2, "hello", true ), test2 );
@@ -126,43 +126,44 @@ describe( "wichevr", ( ) => {
 		} );
 	} );
 
-	describe( `"wichevr( "", false, "hello" )"`, ( ) => {
-	it( "should be equal to 'hello'", ( ) => {
+	describe( "`wichevr( '', false, 'hello' )`", ( ) => {
+		it( "should be equal to 'hello'", ( ) => {
 
 			assert.equal( wichevr( "", false, "hello" ), "hello");
 
 		} );
 	} );
 
-	describe( `"wichevr( "", false, arguments )"`, ( ) => {
-	it( "should be equal to arguments", ( ) => {
+	describe( "`wichevr( '', false, { 0: 'hello' } )`", ( ) => {
+		it( "should be equal to { 0: 'hello' }", ( ) => {
 
-			assert.deepEqual( wichevr( "", false, arguments ), arguments );
+			assert.deepEqual( wichevr( "", false, { 0: "hello" } ), { 0: "hello" } );
 
 		} );
 	} );
 
-	describe( `"wichevr( test4,function procedure( ){ throw new Error( "no operation" ) } )"`, ( ) => {
-	it( "should be deeply equal", ( ) => {
+	describe( "`wichevr( function hello( ){ return 'hello' }, function procedure( ){ throw new Error( 'no operation' ) } )`", ( ) => {
+		it( "should be equal to function hello( ){ return 'hello' }", ( ) => {
 
 			let test4 = function hello( ){ return "hello" };
-					assert.deepEqual( wichevr( test4,
+			assert.deepEqual(
+				wichevr( test4,
 					function procedure( ){ throw new Error( "no operation" ) } ),
 					test4 );
 
 		} );
 	} );
 
-	describe( `"wichevr( false, function hello( ){ return "hello" }, true )"`, ( ) => {
-	it( "should be equal to true", ( ) => {
+	describe( "`wichevr( false, function hello( ){ return 'hello' }, true )`", ( ) => {
+		it( "should be equal to true", ( ) => {
 
 			assert.equal( wichevr( false, function hello( ){ return "hello" }, true ), true );
 
 		} );
 	} );
 
-	describe( `"wichevr( "", "yeah", { } )"`, ( ) => {
-	it( "should have value 'yeah'" , ( ) => {
+	describe( "`wichevr( '', 'yeah', { } )`", ( ) => {
+		it( "should be equal to 'yeah'" , ( ) => {
 
 			assert.equal( wichevr( "", "yeah", { } ), "yeah" );
 
@@ -170,9 +171,8 @@ describe( "wichevr", ( ) => {
 	} );
 
 } );
-
-
 //: @end-server
+
 
 
 
